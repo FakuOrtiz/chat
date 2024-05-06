@@ -21,7 +21,7 @@ const ModalNickname = () => {
   return (
     <>
       {!nickname && (
-        <article className="absolute h-svh w-full flex justify-center items-center bg-black bg-opacity-50">
+        <article className="absolute h-svh w-full flex justify-center items-center bg-black bg-opacity-50 z-20">
           <form
             onSubmit={handleSubmit}
             className="flex flex-col gap-4 p-4 max-w-[300px] bg-slate-300 rounded-xl"

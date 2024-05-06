@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
 
 const montse = Montserrat({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body
         className={`flex items-center flex-col bg-gradient-to-br from-[var(--primary)] to-[var(--secondary)] ${montse.className}`}
       >
+        <Header />
         <main className="w-full max-w-md h-svh">{children}</main>
       </body>
     </html>

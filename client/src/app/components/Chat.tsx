@@ -59,6 +59,7 @@ const Chat = () => {
           name="message"
           value={message}
           onChange={handleChange}
+          autoComplete="off"
           className="rounded-xl p-3 flex-1 relative"
           placeholder="Escribí un mensaje..."
         />

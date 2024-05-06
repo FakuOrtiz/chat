@@ -17,3 +17,8 @@
 *::-webkit-scrollbar-track {
   margin: 20px;
 }
+
+input {
+  outline: none;
+  border: none;
+}

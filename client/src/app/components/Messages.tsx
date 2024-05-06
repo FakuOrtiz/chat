@@ -9,7 +9,7 @@ const Messages = () => {
   const messages = useStore((state: IStore) => state.messages);
 
   return (
-    <article className="flex h-full flex-col gap-3 p-4 overflow-y-auto mb-[78px]">
+    <article className="flex h-full flex-col gap-3 p-4 overflow-y-auto my-[78px]">
       {messages.map((msg, i) => (
         <div
           key={i}
