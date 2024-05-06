@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="es" className="p-0 m-0">
       <body
-        className={`flex items-center flex-col bg-gradient-to-br from-[#5731D7] to-[#2C2542] ${montse.className} overflow-hidden`}
+        className={`flex items-center flex-col bg-gradient-to-br from-[var(--primary)] to-[var(--secondary)] ${montse.className}`}
       >
         <main className="w-full max-w-md h-svh">{children}</main>
       </body>

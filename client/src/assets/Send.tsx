@@ -1,15 +1,12 @@
 const Send = (props: any) => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    className="icon icon-tabler icon-tabler-send-2"
-    width={44}
-    height={44}
-    viewBox="0 0 24 24"
-    strokeWidth={1.5}
-    stroke="#2C2542"
     fill="none"
     strokeLinecap="round"
     strokeLinejoin="round"
+    strokeWidth={1.5}
+    className="icon icon-tabler icon-tabler-send-2"
+    stroke="#2c2542"
+    viewBox="0 0 24 24"
     {...props}
   >
     <path d="M0 0h24v24H0z" stroke="none" />
