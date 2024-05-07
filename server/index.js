@@ -7,11 +7,19 @@ const port = process.env.PORT ?? 4000;
 
 const app = express();
 const server = createServer(app);
-const io = new SocketServer(server, { cors: { origin: "*" } });
+const io = new SocketServer(server, {
+  cors: {
+    origin: "*",
+    methods: ["GET", "POST"],
+    transports: ["websocket", "polling"],
+    credentials: true,
+  },
+  allowEIO3: true,
+});
 
 app.use("/", (req, res) => {
   res.send("Server is running");
-})
+});
 
 io.on("connection", (socket) => {
   socket.on("message", (message) => {
