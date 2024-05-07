@@ -1,7 +1,6 @@
 const Close = (props: any) => (
   <svg
     fill="none"
-    stroke="#2c2542"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={1.5}

@@ -1,7 +1,6 @@
 const Settings = (props: any) => (
   <svg
     fill="none"
-    stroke="#cbd5e1"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={1.5}

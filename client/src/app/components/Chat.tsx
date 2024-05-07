@@ -70,7 +70,7 @@ const Chat = () => {
           type="submit"
           className="flex justify-center items-center rounded-full bg-[var(--primary)] w-12 h-12 p-1.5"
         >
-          <Send width={44} height={44} />
+          <Send width={44} height={44} className="stroke-[var(--secondary)]" />
         </button>
       </form>
     </article>

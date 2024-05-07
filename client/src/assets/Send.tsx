@@ -5,7 +5,6 @@ const Send = (props: any) => (
     strokeLinejoin="round"
     strokeWidth={1.5}
     className="icon icon-tabler icon-tabler-send-2"
-    stroke="#2c2542"
     viewBox="0 0 24 24"
     {...props}
   >
