@@ -12,7 +12,6 @@ const io = new SocketServer(server, {
     origin: "*",
     methods: ["GET", "POST"],
     transports: ["websocket", "polling"],
-    credentials: true,
   },
   allowEIO3: true,
 });
