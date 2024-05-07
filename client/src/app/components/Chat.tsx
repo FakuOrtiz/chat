@@ -4,7 +4,7 @@ import { IStore, useStore } from "@/store";
 import { useEffect, useState } from "react";
 import io from "socket.io-client";
 
-const socket = io("http://localhost:4000");
+const socket = io(process.env.PORT || "http://localhost:4000");
 
 const Chat = () => {
   const addMessage = useStore((state: IStore) => state.addMessage);
