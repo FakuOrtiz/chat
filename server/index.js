@@ -9,6 +9,10 @@ const app = express();
 const server = createServer(app);
 const io = new SocketServer(server, { cors: { origin: "*" } });
 
+app.use("/", (req, res) => {
+  res.send("Server is running");
+})
+
 io.on("connection", (socket) => {
   socket.on("message", (message) => {
     socket.broadcast.emit("message", message);
