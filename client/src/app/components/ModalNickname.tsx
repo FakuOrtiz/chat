@@ -29,6 +29,7 @@ const ModalNickname = () => {
 
     setNickname(newNickname);
     localStorage.setItem("nickname", newNickname);
+    setOpen(false);
   };
 
   return (
